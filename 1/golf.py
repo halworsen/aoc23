@@ -1,0 +1,1 @@
+import re;print(sum(map(lambda n:int(n[0]+n[-1]),map(lambda l:''.join(list(filter(lambda c:c.isnumeric(),re.sub(f'(?=({"|".join(d:=["one","two","three","four","five","six","seven","eight","nine"])}))',lambda m:str(d.index(m.group(1))+1),l)))),set(open('in.txt','r+'))))))
